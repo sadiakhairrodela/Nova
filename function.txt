@@ -1,0 +1,25 @@
+Functional requirements: 
+Module 1 
+1. [Member-1] Caregivers or parents can create a profile for each baby. They can add details like birth date, risk group, contact info, and notes. One caregiver account can manage more than one baby. 
+2. [Member -1] The system shall provide a moderated community space for caregivers where registered parents/caregivers can create posts, ask questions, share experiences, and interact through comments,reactions. 
+3. [Member-2] Assessors can see a list of new videos that have been submitted. Each video shows basic details like the baby’s ID, age, time sent, and status. Assessors can choose a video and accept it to review. 
+4. [Member-3] The system shall provide a Digital Consent & Data-Sharing workflow. The system asks caregivers to agree to privacy rules before anything is reviewed.Caregivers can choose who is allowed to see the data.They can give or take away access from doctors or assessors at any time. 
+Module 2 
+1. [Member-1] Caregivers can record and upload a video using easy step-by-step instructions on their phone.
+Before sending the video, the system checks if the video is good quality (for example: the baby is calm, wearing proper clothes, the whole body is visible, and the video is long enough). 
+If the video is not good, they can record and upload it again. 
+2. [Member-2] Users can mark tasks as “completed,” “in progress,” or “pending” to track progress.Assessors can watch the video in one place.They can write notes while watching the video. After finishing, they decide if the video is okay or not and write what should happen next. (e.g., “usable / not usable”, observation notes, risk flag, follow-up recommendation). 
+3. [Member-2] The system shall offer an Expert Advice Desk workflow that allows caregivers to submit structured queries to verified clinicians, optionally linking the query to a specific submission (video case) and attaching supporting files (e.g., referral note). Clinicians can respond via threaded replies, while maintaining an audit trail and status tracking (e.g., Open, In Review, Responded, Closed) to ensure accountability and continuity of care. 
+4. [Member-3] The system shall provide a Notification Center where users can manage notification preferences and the system shall automatically send SMS or Email updates for events such as “video received”, “re-record requested”, “review completed”, and “follow-up due” via an external messaging API. 
+Module 3 
+1. [Member-1]The system lets caregivers upload videos even if the internet is slow. Videos upload in small parts, show progress, and can restart if the upload fails. This makes sure videos get submitted reliably, even with a weak connection. 
+2. [Member-1] Caregivers can see a timeline of all their videos and their status, like: Draft,Submitted,Re-record Needed,Under Review, Reviewed. 
+They can replace a video if the system asks them to. 
+3. [Member-2] Clinicians or assessors can create a screening report that shows: a)Reviewer notes, b)Any flags or issues c)Recommended next steps 
+They can also save or download the report as a PDF to share or print.
+4. [Member-2]Clinicians can set and manage follow-up tasks for each baby, like: a)Next assessment date, b)Suggested clinic visit 
+5. [Member-3] The system shall maintain an Audit Log Dashboard recording who accessed which video/report and what action was performed 
+(view/download/update), visible only to authorized adminroles. 
+6. [Member-3] The system shall implement a Data Retention & Delete Request workflow where caregivers can request deletion, admins can 
+approve/pending/purge, and the platform enforces retention rules while preserving audit integrity. 
+7. [Member-3] The system shall include an AI-assisted support chatbot that provides caregivers with step-by-step guidance for video recording, consent submission, troubleshooting (e.g., upload issues), understanding statuses, navigating the system and follow-up scheduling using predefined knowledge base content and an external AI/NLP API for natural language responses. It will be non-diagnostic and must display clear safety disclaimers.
